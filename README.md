@@ -21,6 +21,10 @@ JP
 2. あなたのTumblrテーマエディタに入ります > 詳細オプション
 3. カスタムCSSのフィールドにコードを貼り付けます。
 
+[![YouTube Icon](https://commons.wikimedia.org/wiki/File:YoutubeLogoLink.png)](https://www.youtube.com/embed/X32ctxHbN5E)
+
+**[Watch Demo on YouTube](https://www.youtube.com/embed/X32ctxHbN5E)**
+
 ## Tested and Debugged
 - Text post
 - Photo post
