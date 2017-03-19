@@ -2,20 +2,31 @@
 <table style="width:100%">
     <tr>
         <td align="center">
-            <a href='http://101img8.info/img-58ce4cba06f51.html'><img src='http://101img8.info/thumb/58ce4cba06f51.png' alt='Original Design'></a><br><b>Original theme<br>Regular Thumbnails</b>
+            <a href='http://101img8.info/img-58ce4cba06f51.html'><img src='http://101img8.info/thumb/58ce4cba06f51.png' alt='Original Design'></a><br><b>Original theme　元のテーマ<br>Regular Thumbnails　通常のサムネイル</b>
         </td>
         <td align="center">>
-        <a href='http://101img8.info/img-58ce4c052c087.html'><img src='http://101img8.info/thumb/58ce4c052c087.png' alt='Customized Design'></a><br><b>Custom CSS theme<br>Rounded Thumbnails</b>
+        <a href='http://101img8.info/img-58ce4c052c087.html'><img src='http://101img8.info/thumb/58ce4c052c087.png' alt='Customized Design'></a><br><b>Custom CSS theme　カスタムCSSテーマ<br>Rounded Thumbnails　丸められたサムネイル</b>
         </td>
     <tr>
 </table>
 
-# Tested and Debugged
+## How to install
+EN
+1. Open and copy the codes in CustomCSS.css
+2. Enter your Tumblr theme editor > Advanced options
+3. Paste the code to the field of Custom CSS
+
+JP
+1. CustomCSS.cssのコードを開いてコピーします。
+2. あなたのTumblrテーマエディタに入ります > 詳細オプション
+3. カスタムCSSのフィールドにコードを貼り付けます。
+
+## Tested and Debugged
 - Text post
 - Photo post
 - Video post
 
-\**Please report if you find any bugs.*
+\**Please report if you find any bugs.* バグを見つけたばい、報告してください
 
 # Fork Contributor
 - Chris KY FUNG - Jp Contact: [@chrisfungky](https://twitter.com/chrisfungky) (twitter)
