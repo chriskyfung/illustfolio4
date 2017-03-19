@@ -1,0 +1,29 @@
+/* Custom CSS to make rounded index-post illustfolio4 theme 
+   illustfolio4テーマのサムネ丸くするカスタムCSSです 　　　　　*/
+   
+  /* 文字ポスト */
+  .size-xs .post-content-anchor {
+    border-radius: 50%;　
+　  background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+    padding:20% 0 0 20%;　/* Top and left of text position 文字の上と左の位置 */
+  }
+  
+  /* 画像ポスト */
+  .size-xs .post-photo-thumb{
+    border-radius: 50%;　
+　  background-repeat: no-repeat;
+    background-position: 50%;
+    width: 200px;
+    height: 200px;
+  }
+  
+  /* 動画ポスト */
+ .video .post-inner >.has-thumbnail{
+      display: none;
+      height:0;
+  }
+ .video .post-content-wrapper{
+      height:200px;
+  }
