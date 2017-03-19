@@ -12,12 +12,12 @@
 
 ## How to install
 EN
-1. Open and copy the codes in CustomCSS.css
+1. Open and copy the codes in [CustomCSS.css](CustomCSS.css)
 2. Enter your Tumblr theme editor > Advanced options
 3. Paste the code to the field of Custom CSS
 
 JP
-1. CustomCSS.cssのコードを開いてコピーします。
+1. [CustomCSS.css](CustomCSS.css)のコードを開いてコピーします。
 2. あなたのTumblrテーマエディタに入ります > 詳細オプション
 3. カスタムCSSのフィールドにコードを貼り付けます。
 
