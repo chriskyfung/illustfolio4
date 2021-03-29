@@ -4,7 +4,7 @@
 <!--
   Theme: Illustfolio 4
   by @sanographix
-  http://www.sanographix.net
+  https://www.sanographix.net
   (c) 2016 Showkaku Sano
   MIT License
 -->
@@ -52,7 +52,7 @@
   <link rel="alternate" type="application/rss+xml" href="{RSS}">
   <link rel="apple-touch-icon" href="{PortraitURL-128}">
 
-  <link rel="stylesheet" type="text/css" media="screen" href="http://static.tumblr.com/xxf6ewk/J78ok8kgo/style.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="https://static.tumblr.com/xlsgtjb/F30qqb4h8/style.css" />
 
   
   <meta property="og:title" content="{block:PostSummary}{PostSummary} - {/block:PostSummary}{Title}" />
@@ -167,6 +167,11 @@
                 <a href="/ask">{AskLabel}</a>
               </li>
             {/block:AskEnabled}
+            {block:SubmissionsEnabled}
+              <li>
+                <a href="/submit">{SubmitLabel}</a>
+              </li>
+            {/block:SubmissionsEnabled}
             <li>
               <a href="/archive">Archive</a>
             </li>
@@ -219,6 +224,7 @@
                         {/block:Title}
                       </div>
                     </a>
+                    <div class="index-post-content-text-body">{Body}</div>
                   {/block:Text}
 
                   
@@ -372,7 +378,7 @@
       {block:ifSingleColumnMode}
         <div class="top-post-container top-single-column">
           {block:Posts}
-            <article class="post permalink-post {TagsAsClasses} {PostType}">
+            <article class="post {TagsAsClasses} {PostType}">
               <div class="l-container-mini section">
                 {block:Text}
                   <header class="entry-header">
@@ -538,7 +544,7 @@
 
   
   {block:PermalinkPage}
-    {block:Posts}
+    {block:Posts inlineMediaWidth="1280"}
       <article class="post permalink-post {TagsAsClasses} {PostType}">
 
         
@@ -707,12 +713,12 @@
                   <li>{LikeButton color="grey" size="20"}</li>
                   <li>
                     <a href="https://twitter.com/share?text={block:PostSummary}{URLEncodedPostSummary}{/block:PostSummary}&url={ShortURL}">
-                      <img src="http://static.tumblr.com/xlsgtjb/HFfneerjd/social-twitter.svg" class="social-icon">
+                      <img src="https://static.tumblr.com/xlsgtjb/x8lp4rk60/social-twitter.svg" class="social-icon">
                     </a>
                   </li>
                   <li>
                     <a href="http://www.facebook.com/sharer.php?u={URLEncodedPermalink}">
-                      <img src="http://static.tumblr.com/xlsgtjb/evRneeqts/social-facebook.svg" class="social-icon">
+                      <img src="https://static.tumblr.com/xlsgtjb/qJSp4rk78/social-facebook.svg" class="social-icon">
                     </a>
                   </li>
                 </ul>
@@ -885,7 +891,7 @@
 
 {block:IfShowTagList}
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <script src="http://static.tumblr.com/xxf6ewk/hScof72wo/tumblrposts.js"></script>
+  <script src="https://static.tumblr.com/xxf6ewk/hScof72wo/tumblrposts.js"></script>
   <script>
     $(document).ready(function(){
       (function() {
@@ -907,7 +913,7 @@
   </script>
 {/block:IfShowTagList}
 
-<script src="http://static.tumblr.com/xxf6ewk/Mh1ofifbk/scripts.js"></script>
+<script src="https://static.tumblr.com/xlsgtjb/JGnqqb4i1/scripts.js"></script>
 </body>
 </html>
 

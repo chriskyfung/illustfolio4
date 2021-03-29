@@ -311,6 +311,11 @@
     margin-bottom: .5em;
 }
 
+// NPFでのサムネイル生成用にbodyを持っておく
+.index-post-content-text-body {
+    display: none;
+}
+
 // indexページの記事フッタ
 .index-entry-footer {
     display: flex;
@@ -469,11 +474,6 @@
     }
 }
 
-// page-permalink
-.permalink-post {
-    margin: auto;
-}
-
 // photo, photoset, video
 .full-image {
     text-align: center;
@@ -534,10 +534,7 @@
     }
     .tumblr_video_container {
         width: auto !important;
-        height: 100vw !important;
-        iframe {
-            height: 100vw;
-        }
+        height: auto !important;
     }
     // Flickr で max-width 指定したときのアスペクト比をなおす
      a[title*="Flickr"] img {
@@ -661,6 +658,41 @@
         border: 0;
         border-top: 3px solid $border;
     }
+
+    // NPF(Neue Post Format)
+    & > figure {
+        margin: 24px 0;
+        // GIF attributio
+        .tmblr-attribution {
+            text-align: center;
+            font-size: 80%;
+        }
+    }
+}
+
+// パーマリンクのとき画像サイズを大きくする
+.permalink-post {
+    .entry-content > figure {
+        margin: 24px -10px;
+        @media (min-width: 540px) {
+            margin-left: 0;
+            margin-right: 0;
+        }
+        @media #{$mq-md} {
+            margin-left: -120px;
+            margin-right: -120px;
+        }
+        @media #{$mq-lg} {
+            margin-left: -220px;
+            margin-right: -220px;
+        }
+        img {
+            max-height: 1280px;
+            display: block;
+            margin: auto;
+        }
+    }
+
 }
 
 // video post
@@ -761,10 +793,10 @@
         display: table-cell;
         text-align: center;
         padding-right: 1.5em;
-        vertical-align: middle;
+        vertical-align: top;
         .social-icon {
             width: 20px;
-            height: auto;
+            height: 20px;
             vertical-align: top;
         }
         &:last-child {
@@ -861,7 +893,7 @@
     li {
         display: inline-block;
         list-style: none;
-        margin-right: .7em;
+        margin: 0 .35em;
         padding: 0;
         vertical-align: middle;
         a {

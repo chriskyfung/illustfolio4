@@ -35,6 +35,11 @@ pageId = "index";
                 <a href="/ask">{AskLabel}</a>
               </li>
             {/block:AskEnabled}
+            {block:SubmissionsEnabled}
+              <li>
+                <a href="/submit">{SubmitLabel}</a>
+              </li>
+            {/block:SubmissionsEnabled}
             <li>
               <a href="/archive">Archive</a>
             </li>
@@ -87,6 +92,7 @@ pageId = "index";
                         {/block:Title}
                       </div>
                     </a>
+                    <div class="index-post-content-text-body">{Body}</div>
                   {/block:Text}
 
                   <%# Post: photo %>
@@ -240,7 +246,7 @@ pageId = "index";
       {block:ifSingleColumnMode}
         <div class="top-post-container top-single-column">
           {block:Posts}
-            <article class="post permalink-post {TagsAsClasses} {PostType}">
+            <article class="post {TagsAsClasses} {PostType}">
               <div class="l-container-mini section">
                 {block:Text}
                   <header class="entry-header">
@@ -406,7 +412,7 @@ pageId = "index";
 
   <%# Permalink Page %>
   {block:PermalinkPage}
-    {block:Posts}
+    {block:Posts inlineMediaWidth="1280"}
       <article class="post permalink-post {TagsAsClasses} {PostType}">
 
         <%# full-width image (photo and photoset post only) %>
@@ -575,12 +581,12 @@ pageId = "index";
                   <li>{LikeButton color="grey" size="20"}</li>
                   <li>
                     <a href="https://twitter.com/share?text={block:PostSummary}{URLEncodedPostSummary}{/block:PostSummary}&url={ShortURL}">
-                      <img src="http://static.tumblr.com/xlsgtjb/HFfneerjd/social-twitter.svg" class="social-icon">
+                      <img src="https://static.tumblr.com/xlsgtjb/x8lp4rk60/social-twitter.svg" class="social-icon">
                     </a>
                   </li>
                   <li>
                     <a href="http://www.facebook.com/sharer.php?u={URLEncodedPermalink}">
-                      <img src="http://static.tumblr.com/xlsgtjb/evRneeqts/social-facebook.svg" class="social-icon">
+                      <img src="https://static.tumblr.com/xlsgtjb/qJSp4rk78/social-facebook.svg" class="social-icon">
                     </a>
                   </li>
                 </ul>
